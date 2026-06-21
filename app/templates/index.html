@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Калькулятор прибыли WB — демо</title>
+<style>
+  :root { --bg:#f4f5f7; --card:#fff; --line:#e3e6ea; --ink:#1f2430; --muted:#6b7280;
+          --accent:#7a3cff; --good:#16a34a; --bad:#dc2626; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 -apple-system,Segoe UI,Roboto,Arial,sans-serif;
+         background:var(--bg); color:var(--ink); }
+  header { background:linear-gradient(90deg,#7a3cff,#a855f7); color:#fff; padding:18px 24px; }
+  header h1 { margin:0; font-size:18px; }
+  header p { margin:4px 0 0; opacity:.9; font-size:13px; }
+  .wrap { max-width:1200px; margin:20px auto; padding:0 16px;
+          display:grid; grid-template-columns:340px 1fr; gap:16px; align-items:start; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  .card h2 { margin:0 0 12px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  label { display:block; font-size:12px; color:var(--muted); margin:10px 0 3px; }
+  input, select { width:100%; padding:8px 9px; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
+  button { width:100%; margin-top:14px; padding:11px; border:0; border-radius:9px;
+           background:var(--accent); color:#fff; font-weight:600; font-size:15px; cursor:pointer; }
+  button:hover { filter:brightness(1.05); }
+  button:disabled { opacity:.5; cursor:default; }
+  .wh-search { margin-bottom:6px; }
+  .wh-list { max-height:190px; overflow:auto; border:1px solid var(--line); border-radius:8px; padding:6px; }
+  .wh-list label { display:flex; gap:7px; align-items:center; margin:0; padding:3px 4px; color:var(--ink); font-size:13px; cursor:pointer; }
+  .wh-list label:hover { background:#f6f2ff; border-radius:6px; }
+  .wh-list input { width:auto; }
+  .hint { font-size:11px; color:var(--muted); margin-top:4px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:8px 10px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; color:var(--muted); font-weight:500; }
+  thead th { position:sticky; top:0; background:#faf8ff; color:var(--ink); font-weight:600; }
+  .pct { color:var(--muted); font-size:11px; }
+  tr.sep td { border-top:2px solid var(--line); }
+  tr.profit td { background:#f0fdf4; font-weight:700; }
+  tr.profit td:first-child { color:var(--ink); }
+  .pos { color:var(--good); } .neg { color:var(--bad); }
+  .err { color:var(--bad); font-style:italic; }
+  .scroll { overflow:auto; }
+  .empty { color:var(--muted); padding:30px; text-align:center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Калькулятор прибыли Wildberries — демо</h1>
+  <p>Расчёт юнит-экономики отдельно по каждому складу. Фронт обращается к нашему REST API.</p>
+</header>
+
+<div class="wrap">
+  <!-- ПАРАМЕТРЫ -->
+  <form class="card" id="form">
+    <h2>Параметры товара</h2>
+
+    <label>Предмет (категория)</label>
+    <input id="category_subject" list="subjects" value="Сыворотки" autocomplete="off">
+    <datalist id="subjects"></datalist>
+
+    <div class="row2">
+      <div><label>Цена, ₽</label><input id="price" type="number" value="400" step="0.01"></div>
+      <div><label>Себестоимость, ₽</label><input id="cost_price" type="number" value="99" step="0.01"></div>
+    </div>
+
+    <label>Габариты, см (Д×Ш×В)</label>
+    <div class="row3">
+      <input id="length_cm" type="number" value="8" step="0.1">
+      <input id="width_cm"  type="number" value="4" step="0.1">
+      <input id="height_cm" type="number" value="20" step="0.1">
+    </div>
+
+    <div class="row2">
+      <div>
+        <label>Модель продаж</label>
+        <select id="sales_model">
+          <option>FBW</option><option>FBS</option><option>DBS</option><option>EDBS</option><option>C&C</option>
+        </select>
+      </div>
+      <div>
+        <label>Упаковка (FBW)</label>
+        <select id="delivery_type"><option value="box">Короб</option><option value="monopallet">Монопаллета</option></select>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div><label>Оборачиваемость, дн</label><input id="turnover_days" type="number" value="45"></div>
+      <div><label>Выкуп, %</label><input id="buyout_percent" type="number" value="92"></div>
+    </div>
+
+    <div class="row2">
+      <div><label>Продвижение, %</label><input id="promo_percent" type="number" value="0"></div>
+      <div><label>Прочие расходы, ₽</label><input id="other_expenses_per_unit" type="number" value="0" step="0.01"></div>
+    </div>
+
+    <div class="row2">
+      <div>
+        <label>Налог</label>
+        <select id="tax_system">
+          <option value="usn_income">УСН «Доходы»</option>
+          <option value="usn_income_minus_expenses">УСН «Доходы−расходы»</option>
+          <option value="other">Другая</option>
+          <option value="none">Не учитывать</option>
+        </select>
+      </div>
+      <div><label>Ставка, %</label><input id="tax_rate" type="number" value="6" step="0.1"></div>
+    </div>
+
+    <h2 style="margin-top:18px">Склады (1–5)</h2>
+    <input class="wh-search" id="wh_search" placeholder="поиск склада…" autocomplete="off">
+    <div class="wh-list" id="wh_list"></div>
+    <div class="hint" id="wh_hint">выбрано: 0</div>
+
+    <button type="submit" id="go">Рассчитать</button>
+    <div class="hint" id="status"></div>
+  </form>
+
+  <!-- РЕЗУЛЬТАТ -->
+  <div class="card">
+    <h2>Результат по складам</h2>
+    <div class="scroll" id="result"><div class="empty">Заполните параметры и нажмите «Рассчитать»</div></div>
+  </div>
+</div>
+
+<script>
+const USER = 42;                         // отдельный пользователь для демо-UI
+const H = { "Content-Type":"application/json", "X-User-Id":String(USER) };
+let calcId = null;
+let warehouses = [];
+
+const $ = id => document.getElementById(id);
+const money = v => (v==null ? "—" : Number(v).toLocaleString("ru-RU",{minimumFractionDigits:2,maximumFractionDigits:2})+" ₽");
+const pct   = v => (v==null ? "" : Number(v).toLocaleString("ru-RU",{maximumFractionDigits:2})+" %");
+
+// --- загрузка справочников ---
+async function loadRefs(){
+  const [cats, whs] = await Promise.all([
+    fetch("/references/categories").then(r=>r.json()),
+    fetch("/references/warehouses").then(r=>r.json()),
+  ]);
+  const dl = $("subjects");
+  dl.innerHTML = cats.items.map(c=>`<option value="${c.subject}">${c.path}</option>`).join("");
+  warehouses = whs.items;
+  renderWh("");
+  // предвыбор эталонных складов
+  ["voronezh-pitanie","koledino"].forEach(id=>{ const cb=document.querySelector(`#wh_list input[value="${id}"]`); if(cb) cb.checked=true; });
+  updateWhHint();
+}
+
+function renderWh(q){
+  q = q.trim().toLowerCase();
+  const chosen = new Set(selectedWh());
+  const list = warehouses.filter(w => !q || w.name.toLowerCase().includes(q) || w.id.includes(q));
+  $("wh_list").innerHTML = list.slice(0,200).map(w=>{
+    const t = w.supportedTypes.length ? ` · ${w.supportedTypes.map(x=>x==="box"?"короб":"монопаллета").join("/")}` : "";
+    const c = chosen.has(w.id) ? "checked":"";
+    return `<label><input type="checkbox" value="${w.id}" ${c}>${w.name}<span class="pct">${t}</span></label>`;
+  }).join("");
+}
+function selectedWh(){ return [...document.querySelectorAll('#wh_list input:checked')].map(c=>c.value); }
+function updateWhHint(){ const n=selectedWh().length; $("wh_hint").textContent="выбрано: "+n; }
+
+$("wh_search").addEventListener("input", e=>renderWh(e.target.value));
+$("wh_list").addEventListener("change", updateWhHint);
+
+// --- расчёт ---
+async function ensureCalc(){
+  if(calcId) return calcId;
+  const list = await fetch("/calculations",{headers:H}).then(r=>r.json());
+  if(list.items.length){ calcId=list.items[0].id; return calcId; }
+  const c = await fetch("/calculations",{method:"POST",headers:H}).then(r=>r.json());
+  calcId = c.id; return calcId;
+}
+
+function payload(){
+  const num = id => { const v=$(id).value; return v===""?null:Number(v); };
+  return {
+    category_subject:$("category_subject").value || null,
+    price:num("price"), cost_price:num("cost_price"),
+    length_cm:num("length_cm"), width_cm:num("width_cm"), height_cm:num("height_cm"),
+    sales_model:$("sales_model").value, delivery_type:$("delivery_type").value,
+    warehouse_ids:selectedWh(),
+    turnover_days:num("turnover_days"), buyout_percent:num("buyout_percent"),
+    promo_percent:num("promo_percent"), other_expenses_per_unit:num("other_expenses_per_unit"),
+    tax_system:$("tax_system").value, tax_rate:num("tax_rate"),
+  };
+}
+
+$("form").addEventListener("submit", async e=>{
+  e.preventDefault();
+  $("go").disabled=true; $("status").textContent="Считаю…";
+  try{
+    const id = await ensureCalc();
+    const res = await fetch(`/calculations/${id}`,{method:"PATCH",headers:H,body:JSON.stringify(payload())}).then(r=>r.json());
+    if(res.error==="validation"){
+      render(null, res.fields);
+      $("status").textContent="Ошибка валидации";
+    } else {
+      render(res.result.byWarehouse, null);
+      $("status").textContent="Готово";
+    }
+  }catch(err){ $("status").textContent="Ошибка: "+err.message; }
+  finally{ $("go").disabled=false; }
+});
+
+// --- таблица ---
+const ROWS = [
+  ["Цена","priceRub",1],
+  ["— Комиссия","wbCosts.commission",1],
+  ["— Эквайринг","wbCosts.acquiring",1],
+  ["— Логистика","wbCosts.logistics",1],
+  ["— Хранение","wbCosts.storage",1],
+  ["— Приёмка","wbCosts.acceptance",1],
+  ["Расходы WB, всего","wbCosts.total","sep"],
+  ["К перечислению продавцу","transferToSeller",1],
+  ["Налог","taxes",1],
+  ["Себестоимость","costPrice",1],
+  ["Продвижение","promotion",1],
+  ["Прочие расходы","otherExpenses",1],
+  ["Расходы, всего","totalExpenses","sep"],
+  ["Прибыль","profit","profit"],
+  ["Маржинальность","marginality","plain%"],
+  ["ROI","roi","plain%"],
+  ["Цена безубыточности","breakevenPrice","plainRub"],
+  ["Объём, л","volumeLiters","plainNum"],
+];
+const dig = (o,path)=> path.split(".").reduce((a,k)=>a&&a[k], o);
+
+function cell(col, key, kind, title){
+  if(col.error) return title==="Цена" ? `<td class="err">${col.error}</td>` : "<td>—</td>";
+  if(kind==="plain%"){ const v=col[key]; return `<td>${v==null?"—":pct(v)}</td>`; }
+  if(kind==="plainRub"){ return `<td>${money(col[key])}</td>`; }
+  if(kind==="plainNum"){ const v=col[key]; return `<td>${v==null?"—":Number(v).toLocaleString("ru-RU")}</td>`; }
+  const o = dig(col, key); if(o==null) return "<td>—</td>";
+  const cls = key==="profit" ? (o.rub>=0?"pos":"neg") : "";
+  return `<td><span class="${cls}">${money(o.rub)}</span>${o.pct!=null?`<br><span class="pct">${pct(o.pct)}</span>`:""}</td>`;
+}
+
+function render(cols, fields){
+  const box=$("result");
+  if(fields){
+    box.innerHTML = `<div class="err">Проверьте поля:<ul>`+fields.map(f=>`<li>${f.field}: ${f.message}</li>`).join("")+`</ul></div>`;
+    return;
+  }
+  if(!cols || !cols.length){ box.innerHTML=`<div class="empty">Нет складов — выберите хотя бы один.</div>`; return; }
+  let head = "<tr><th>Показатель</th>"+cols.map(c=>`<th>${c.warehouseName||c.warehouseId}</th>`).join("")+"</tr>";
+  let body = ROWS.map(([title,key,kind])=>{
+    const tr = kind==="sep"?"sep":(kind==="profit"?"profit":"");
+    return `<tr class="${tr}"><td>${title}</td>`+cols.map(c=>cell(c,key,kind,title)).join("")+"</tr>";
+  }).join("");
+  box.innerHTML = `<table><thead>${head}</thead><tbody>${body}</tbody></table>`;
+}
+
+loadRefs();
+</script>
+</body>
+</html>

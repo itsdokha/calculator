@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.dump
+.pytest_cache/
+.idea/
+.vscode/
+instance/
+.DS_Store
+*.log
+
+# Исходные материалы и тесты — в репозитории не храним
+tests/
+comments.md
+media_library/
+tz calculator.pdf

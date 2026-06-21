@@ -1,0 +1,2188 @@
+[
+  {
+    "id": "almaty-atakent",
+    "name": "Алматы Атакент",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 0.7,
+        "storage": 0.7
+      },
+      "box": {
+        "logistics": 1.45,
+        "storage": 1.45
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "astana",
+    "name": "Астана",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "astana-2",
+    "name": "Астана 2",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 0.9,
+        "storage": 0.9
+      },
+      "box": {
+        "logistics": 1.45,
+        "storage": 1.45
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "belye-stolby",
+    "name": "Белые Столбы",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.8,
+        "storage": 2.8
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "vladivostok-sgt",
+    "name": "Владивосток СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "vladimir-vorshinskoe",
+    "name": "Владимир Воршинское",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.1,
+        "storage": 2.1
+      },
+      "box": {
+        "logistics": 1.3,
+        "storage": 1.3
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "volgograd",
+    "name": "Волгоград",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.1,
+        "storage": 1.1
+      },
+      "box": {
+        "logistics": 1.15,
+        "storage": 1.1
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "volgograd-pitanie",
+    "name": "Волгоград: Питание",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.15,
+        "storage": 1.1
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "voronezh",
+    "name": "Воронеж",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.6,
+        "storage": 1.6
+      },
+      "box": {
+        "logistics": 1.3,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "voronezh-sgt",
+    "name": "Воронеж СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "voronezh-pitanie",
+    "name": "Воронеж: Питание",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.6,
+        "storage": 1.6
+      },
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "golicyno-sgt",
+    "name": "Голицыно СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 0.75,
+        "storage": 0.75
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "domodedovo-2-pitanie",
+    "name": "Домодедово 2: Питание",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "domodedovo-2",
+    "name": "Домодедово-2",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "domodedovo-2-sgt",
+    "name": "Домодедово-2 СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "ekaterinburg-perspektivnaya-pitanie",
+    "name": "Екатеринбург (Перспективная): Питание",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.05,
+        "storage": 2.25
+      },
+      "box": {
+        "logistics": 1.9,
+        "storage": 1.9
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "ekaterinburg-ispytateley-14g",
+    "name": "Екатеринбург - Испытателей 14г",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.25,
+        "storage": 2.25
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "ekaterinburg-perspektivnaya-14",
+    "name": "Екатеринбург - Перспективная 14",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.75,
+        "storage": 2.25
+      },
+      "box": {
+        "logistics": 1.9,
+        "storage": 1.9
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "ekaterinburg-sgt",
+    "name": "Екатеринбург СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "kazan",
+    "name": "Казань",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.4,
+        "storage": 2.6
+      },
+      "box": {
+        "logistics": 2.25,
+        "storage": 2.2
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "kazan-sgt",
+    "name": "Казань СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "kazan-pitanie",
+    "name": "Казань: Питание",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.4,
+        "storage": 2.6
+      },
+      "box": {
+        "logistics": 2.2,
+        "storage": 2.2
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "klimovsk-sgt",
+    "name": "Климовск СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "koledino",
+    "name": "Коледино",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.15
+      },
+      "box": {
+        "logistics": 2.05,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "koledino-goryuchee",
+    "name": "Коледино: Горючее",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.15
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "kotovsk",
+    "name": "Котовск",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.55,
+        "storage": 1.95
+      },
+      "box": {
+        "logistics": 1.2,
+        "storage": 1.4
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "kotovsk-pitanie",
+    "name": "Котовск: Питание",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.55,
+        "storage": 1.95
+      },
+      "box": {
+        "logistics": 1.2,
+        "storage": 1.4
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "krasnodar-tihoreckaya",
+    "name": "Краснодар (Тихорецкая)",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.65,
+        "storage": 1.65
+      },
+      "box": {
+        "logistics": 1.75,
+        "storage": 1.65
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "krasnodar-tihoreckaya-pitanie",
+    "name": "Краснодар (Тихорецкая): Питание",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.65,
+        "storage": 1.65
+      },
+      "box": {
+        "logistics": 1.75,
+        "storage": 1.65
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "krasnodar-sgt",
+    "name": "Краснодар СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "krasnyy-bor-sgt",
+    "name": "Красный Бор СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "kuzneck-sgt",
+    "name": "Кузнецк СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "nevinnomyssk",
+    "name": "Невинномысск",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.15,
+        "storage": 1.75
+      },
+      "box": {
+        "logistics": 1.15,
+        "storage": 1.05
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "nizhniy-tagil-industrialnaya-sgt",
+    "name": "Нижний Тагил: Индустриальная СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "nikolskoe",
+    "name": "Никольское",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "nikolskoe-sgt",
+    "name": "Никольское СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "novosemeykino",
+    "name": "Новосемейкино",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.65,
+        "storage": 2.0
+      },
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.75
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "novosemeykino-pitanie",
+    "name": "Новосемейкино: Питание",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.0
+      },
+      "box": {
+        "logistics": 1.75,
+        "storage": 1.75
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "novosibirsk-sgt",
+    "name": "Новосибирск СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "obuhovo",
+    "name": "Обухово",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.7,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "obuhovo-sgt",
+    "name": "Обухово СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "penza",
+    "name": "Пенза",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.1,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "penza-sgt",
+    "name": "Пенза СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "perm-goryuchee",
+    "name": "Пермь: Горючее",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.9,
+        "storage": 1.9
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "podolsk",
+    "name": "Подольск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.05,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "podolsk-3",
+    "name": "Подольск 3",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.7,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "podolsk-3-sgt",
+    "name": "Подольск 3 СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "podolsk-4",
+    "name": "Подольск 4",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 3.5,
+        "storage": 3.5
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "radumlya-sgt",
+    "name": "Радумля СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 0.95,
+        "storage": 0.95
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "ryazan-tyushevskoe",
+    "name": "Рязань (Тюшевское)",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.8
+      },
+      "box": {
+        "logistics": 1.25,
+        "storage": 1.4
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "ryazan-tyushevskoe-pitanie",
+    "name": "Рязань (Тюшевское): Питание",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.4,
+        "storage": 1.4
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-abakan",
+    "name": "СЦ Абакан",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-abakan-2",
+    "name": "СЦ Абакан 2",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-aktobe",
+    "name": "СЦ Актобе",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.45,
+        "storage": 1.45
+      },
+      "monopallet": {
+        "logistics": 0.6,
+        "storage": 0.6
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-artem",
+    "name": "СЦ Артем",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-arhangelsk-ul-lenina",
+    "name": "СЦ Архангельск (ул Ленина)",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.8,
+        "storage": 1.8
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-astrahan",
+    "name": "СЦ Астрахань",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-astrahan-solyanka",
+    "name": "СЦ Астрахань (Солянка)",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.55,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-bayserke",
+    "name": "СЦ Байсерке",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 0.7,
+        "storage": 0.7
+      },
+      "box": {
+        "logistics": 1.35,
+        "storage": 1.35
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-barnaul",
+    "name": "СЦ Барнаул",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.2,
+        "storage": 2.2
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-belaya-dacha",
+    "name": "СЦ Белая Дача",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.05,
+        "storage": 2.05
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-belogorsk",
+    "name": "СЦ Белогорск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-bishkek",
+    "name": "СЦ Бишкек",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-vladikavkaz",
+    "name": "СЦ Владикавказ",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.3,
+        "storage": 1.3
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-vladimir",
+    "name": "СЦ Владимир",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-vnukovo",
+    "name": "СЦ Внуково",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.75,
+        "storage": 1.75
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-vologda",
+    "name": "СЦ Вологда",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-vologda-2",
+    "name": "СЦ Вологда 2",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.8,
+        "storage": 1.8
+      },
+      "box": {
+        "logistics": 1.85,
+        "storage": 1.85
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-voronezh",
+    "name": "СЦ Воронеж",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.75,
+        "storage": 1.75
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-erevan",
+    "name": "СЦ Ереван",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.55,
+        "storage": 1.55
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-ivanovo",
+    "name": "СЦ Иваново",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.35,
+        "storage": 1.35
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-izhevsk",
+    "name": "СЦ Ижевск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-irkutsk",
+    "name": "СЦ Иркутск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.7,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-kaluga",
+    "name": "СЦ Калуга",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.7,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-kemerovo",
+    "name": "СЦ Кемерово",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-kirov",
+    "name": "СЦ Киров",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.85,
+        "storage": 1.85
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-krylovskaya",
+    "name": "СЦ Крыловская",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.4,
+        "storage": 1.45
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-kuzneck",
+    "name": "СЦ Кузнецк",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.65,
+        "storage": 1.65
+      },
+      "box": {
+        "logistics": 1.7,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-kursk",
+    "name": "СЦ Курск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-lipeck",
+    "name": "СЦ Липецк",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-mahachkala",
+    "name": "СЦ Махачкала",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-minsk",
+    "name": "СЦ Минск",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.95,
+        "storage": 1.95
+      },
+      "box": {
+        "logistics": 1.95,
+        "storage": 1.95
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-murmansk",
+    "name": "СЦ Мурманск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.65,
+        "storage": 1.65
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-naberezhnye-chelny",
+    "name": "СЦ Набережные Челны",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-nizhniy-novgorod",
+    "name": "СЦ Нижний Новгород",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-nizhniy-novgorod-larina",
+    "name": "СЦ Нижний Новгород Ларина",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.5,
+        "storage": 1.5
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-nizhniy-tagil",
+    "name": "СЦ Нижний Тагил",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.1,
+        "storage": 2.1
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-novokuzneck",
+    "name": "СЦ Новокузнецк",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.8,
+        "storage": 1.8
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-novosibirsk-pasechnaya",
+    "name": "СЦ Новосибирск Пасечная",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 3.5,
+        "storage": 3.5
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-noyabrsk",
+    "name": "СЦ Ноябрьск",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-obuhovo-2",
+    "name": "СЦ Обухово 2",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.7,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-omsk",
+    "name": "СЦ Омск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-orenburg-centralnaya",
+    "name": "СЦ Оренбург Центральная",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.95,
+        "storage": 1.95
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-osh",
+    "name": "СЦ Ош",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-perm-2",
+    "name": "СЦ Пермь 2",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.65,
+        "storage": 1.65
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-pskov",
+    "name": "СЦ Псков",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.8,
+        "storage": 1.8
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-pushkino",
+    "name": "СЦ Пушкино",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.05,
+        "storage": 2.05
+      },
+      "box": {
+        "logistics": 1.5,
+        "storage": 1.5
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-pyatigorsk",
+    "name": "СЦ Пятигорск",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-pyatigorsk-etoka",
+    "name": "СЦ Пятигорск (Этока)",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.35,
+        "storage": 1.4
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-rostov-na-donu",
+    "name": "СЦ Ростов-на-Дону",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.75,
+        "storage": 1.75
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-saburovo",
+    "name": "СЦ Сабурово",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.3,
+        "storage": 1.3
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-samara",
+    "name": "СЦ Самара",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-serov",
+    "name": "СЦ Серов",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-simferopol-molodezhnenskoe",
+    "name": "СЦ Симферополь Молодежненское",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.45,
+        "storage": 1.45
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-smolensk-3",
+    "name": "СЦ Смоленск 3",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-sofino",
+    "name": "СЦ Софьино",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-surgut",
+    "name": "СЦ Сургут",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-syktyvkar",
+    "name": "СЦ Сыктывкар",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-tambov",
+    "name": "СЦ Тамбов",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.3,
+        "storage": 1.3
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-tver",
+    "name": "СЦ Тверь",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-tomsk",
+    "name": "СЦ Томск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-tyumen",
+    "name": "СЦ Тюмень",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.9,
+        "storage": 1.9
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-ulyanovsk",
+    "name": "СЦ Ульяновск",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.8,
+        "storage": 1.8
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-uralsk",
+    "name": "СЦ Уральск",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-ufa",
+    "name": "СЦ Уфа",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.1,
+        "storage": 2.1
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-habarovsk",
+    "name": "СЦ Хабаровск",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 0.85,
+        "storage": 0.85
+      },
+      "box": {
+        "logistics": 1.9,
+        "storage": 1.9
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-cheboksary-2",
+    "name": "СЦ Чебоксары 2",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.7,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-chelyabinsk-2",
+    "name": "СЦ Челябинск 2",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.8,
+        "storage": 1.8
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-cherepovec",
+    "name": "СЦ Череповец",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.5,
+        "storage": 1.5
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-chita-2",
+    "name": "СЦ Чита 2",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.3,
+        "storage": 1.3
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-shushary",
+    "name": "СЦ Шушары",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.3,
+        "storage": 2.3
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-shymkent",
+    "name": "СЦ Шымкент",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.15,
+        "storage": 1.15
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-shymkent-asar",
+    "name": "СЦ Шымкент Асар",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.45,
+        "storage": 1.45
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sc-yaroslavl",
+    "name": "СЦ Ярославль",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "sc-yaroslavl-gromova",
+    "name": "СЦ Ярославль Громова",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sankt-peterburg-utkina-zavod",
+    "name": "Санкт-Петербург (Уткина Заводь)",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.5,
+        "storage": 2.5
+      },
+      "box": {
+        "logistics": 3.0,
+        "storage": 3.0
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sankt-peterburg-sgt",
+    "name": "Санкт-Петербург СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 1.05,
+        "storage": 1.05
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sarapul",
+    "name": "Сарапул",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.1,
+        "storage": 2.1
+      },
+      "box": {
+        "logistics": 1.7,
+        "storage": 1.75
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sklad-vladivostok",
+    "name": "Склад Владивосток",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.2,
+        "storage": 2.2
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sklad-domodedovo-shinnyy",
+    "name": "Склад Домодедово Шинный",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sklad-erevan",
+    "name": "Склад Ереван",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 1.55,
+        "storage": 1.55
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sklad-istra",
+    "name": "Склад Истра",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sklad-shushary",
+    "name": "Склад Шушары",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.2,
+        "storage": 2.2
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "sofrino-sgt",
+    "name": "Софрино СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 0.95,
+        "storage": 0.95
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sofino-sgt",
+    "name": "Софьино СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      },
+      "box": {
+        "logistics": 0.95,
+        "storage": 0.95
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "sc-bryansk-2",
+    "name": "Сц Брянск 2",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.55,
+        "storage": 1.55
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "tver",
+    "name": "Тверь",
+    "active": true,
+    "coefficients": {},
+    "supportedTypes": []
+  },
+  {
+    "id": "tver-sgt",
+    "name": "Тверь СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "tula",
+    "name": "Тула",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.6,
+        "storage": 2.6
+      },
+      "box": {
+        "logistics": 1.6,
+        "storage": 1.6
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "chashnikovo",
+    "name": "Чашниково",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.5,
+        "storage": 2.5
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "chashnikovo-sgt",
+    "name": "Чашниково СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "chelyabinsk-sgt",
+    "name": "Челябинск СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "chehov-1-novoselki-vl-11-str-2",
+    "name": "Чехов 1, Новоселки вл 11 стр 2",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.05,
+        "storage": 2.05
+      },
+      "box": {
+        "logistics": 2.05,
+        "storage": 2.05
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "chehov-2-novoselki-vl-11-str-7",
+    "name": "Чехов 2, Новоселки вл 11 стр 7",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.05,
+        "storage": 2.05
+      },
+      "box": {
+        "logistics": 2.05,
+        "storage": 2.05
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "shushary-pitanie",
+    "name": "Шушары: Питание",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 2.2,
+        "storage": 2.2
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "scheglovo-holmogory-sgt",
+    "name": "Щеглово (Холмогоры) СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "scherbinka",
+    "name": "Щербинка",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.15,
+        "storage": 2.15
+      },
+      "box": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "elektrostal",
+    "name": "Электросталь",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.7,
+        "storage": 1.65
+      },
+      "box": {
+        "logistics": 1.8,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "box",
+      "monopallet"
+    ]
+  },
+  {
+    "id": "elektrostal-pitanie",
+    "name": "Электросталь: Питание",
+    "active": true,
+    "coefficients": {
+      "box": {
+        "logistics": 1.75,
+        "storage": 1.7
+      }
+    },
+    "supportedTypes": [
+      "box"
+    ]
+  },
+  {
+    "id": "yurga",
+    "name": "Юрга",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 2.0,
+        "storage": 2.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  },
+  {
+    "id": "yaroslavl-sgt",
+    "name": "Ярославль СГТ",
+    "active": true,
+    "coefficients": {
+      "monopallet": {
+        "logistics": 1.0,
+        "storage": 1.0
+      }
+    },
+    "supportedTypes": [
+      "monopallet"
+    ]
+  }
+]
